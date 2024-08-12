@@ -51,7 +51,7 @@ class SetMetaRobots implements SetMetaRobotsInterface
      */
     protected function attributeIsFlaggedInEntity(DataObject $entity, $attributeCode): bool
     {
-        return $entity->getData($attributeCode);
+        return $entity->getData($attributeCode) ?? false;
     }
 
     /**
